@@ -34,4 +34,16 @@ def run_tests():
 # Edit this code
 def sq_diff(n):
 
+#The total of all the squared numbers up until 'n'.
+    total = 0
+#The total of all numbers up until 'n' squared after the loop.
+    squared = 0
+
+    for i in range(0, n+1, 1):
+
+        total = total + (i*i)
+        squared = squared + i
+
+    squared = squared * squared
+    print(squared - total)
 
